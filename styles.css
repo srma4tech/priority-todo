@@ -1,0 +1,117 @@
+/* General Reset */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f1f4f9;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Task Form */
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.task-form input,
+.task-form select,
+.task-form button {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.task-form button {
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.task-form button:hover {
+    background: #45A049;
+    transform: scale(1.05);
+}
+
+/* Task List */
+.task-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-item span {
+    font-size: 16px;
+    flex: 1;
+}
+
+/* Priority Styling */
+.priority-high {
+    background: #FF5252;
+    color: #fff;
+}
+
+.priority-medium {
+    background: #FFC107;
+    color: #333;
+}
+
+.priority-low {
+    background: #4CAF50;
+    color: #fff;
+}
+
+/* Task Buttons */
+.task-item button {
+    border: none;
+    padding: 8px 12px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.task-item button:hover {
+    transform: scale(1.1);
+}
+
+.task-item button:first-of-type {
+    background: #2196F3;
+    color: white;
+}
+
+.task-item button:last-of-type {
+    background: #F44336;
+    color: white;
+}

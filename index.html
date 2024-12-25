@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager with Priorities</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 Task Manager</h1>
+        </header>
+        
+        <section class="task-form">
+            <input type="text" id="taskName" placeholder="Enter task name..." />
+            <select id="taskPriority">
+                <option value="High">🔥 High Priority</option>
+                <option value="Medium">⚡ Medium Priority</option>
+                <option value="Low">🌿 Low Priority</option>
+            </select>
+            <select id="taskCategory">
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Others">Others</option>
+            </select>
+            <button id="addTaskBtn">Add Task</button>
+        </section>
+
+        <section class="task-list">
+            <h2>Your Tasks</h2>
+            <ul id="tasks"></ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
